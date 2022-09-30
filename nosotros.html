@@ -11,54 +11,147 @@
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
     />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body class="body">
     <header>
-      <div class="ancho">
-        <div class="logo">
-          <p><a href="./index.html">M&M</a></p>
-        </div>
-        <nav class="barra_nav">
-          <ul class="menu">
-            <li>
-              <a href="./index.html">Inicio</a>
-            </li>
-            <li>
-              <a href="./nosotros.html">Sobre Nosotros</a>
-            </li>
-            <li>
-              <a href="./servicios.html">Servicios</a>
-              <ul class="submenu">
-                <li>Nuevos Desarrollos</li>
-                <li>Propiedades Venta</li>
-                <li>Alquileres a largo plazo</li>
-                <li>Alquileres vacacionales</li>
+      <div>
+        <nav class="navbar navbar-expand-lg navbar-dark mx-auto">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="./index.html">
+              <img src="./img/My project-2.png" alt="logo" width="150px" />
+            </a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarNavDropdown"
+              aria-controls="navbarNavDropdown"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#"
+                    >Servicios</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./nosotros.html">Quienes Somos</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                    >Propiedades
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Madrid</a></li>
+                    <li>
+                      <a class="dropdown-item" href="#">Costa Española</a>
+                    </li>
+                    <li><a class="dropdown-item" href="#">Ibiza</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Contacto</a>
+                </li>
               </ul>
-            </li>
-            <li>
-              <a href="./propiedades.html">Propiedades</a>
-            </li>
-            <li>
-              <a
-                class="main__header__nav-button"
-                href="./contacto.html#formulario"
-                >Contactanos</a
-              >
-            </li>
-          </ul>
+            </div>
+          </div>
         </nav>
       </div>
     </header>
     <main>
-      <h2><img src="./img/My project-2.png" alt="logo sitio" /></h2>
       <p>Nosotros</p>
+      <div>
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+          <div class="col justify-content-between">
+            <div class="card h-10">
+              <img
+                src="./img/20180209_183452.jpg"
+                class="card-img-top"
+                alt="Daniel"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Daniel Marquez</h5>
+                <p class="card-text">Director Área Fiscal</p>
+              </div>
+              <div class="card-footer">
+                <small class="text-muted">Buenos Aires</small>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-10">
+              <img
+                src="./img/Screenshot_20220819-022622_Photos.jpg"
+                class="card-img-top"
+                alt="Nicolas"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Nicolas Marquez</h5>
+                <p class="card-text">Director Comercial y Residencial</p>
+              </div>
+              <div class="card-footer">
+                <small class="text-muted">Islas Baleares / Ibiza</small>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-10">
+              <img src="./img/E2.jpg" class="card-img-top" alt="Emilio" />
+              <div class="card-body">
+                <h5 class="card-title">Emilio Zieba</h5>
+                <p class="card-text">Director Área Legal</p>
+              </div>
+              <div class="card-footer">
+                <small class="text-muted">Murcia / Malaga</small>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <p class="texto_nosotros">
+        STAFF
+        <br />
+        Más de 30 personas completan el resto de nuestro equipo de trabajo
+      </p>
+            </div>
+          </div>
+        </div>
+      </div>
     </main>
   </body>
   <footer>
+    <img src="./img/My project-1.png" alt="logo" height="100px" />
     <section class="botonesrs">
       <a href="#" class="fa fa-facebook"></a>
       <a href="#" class="fa fa-youtube"></a>
       <a href="#" class="fa fa-linkedin"></a>
     </section>
+    <p class="texto_footer">
+      Contacto:
+      <br />
+      Whatsapp 12345677
+      <br />
+      Dirección: calle falsa 123
+    </p>
   </footer>
 </html>

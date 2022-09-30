@@ -1,0 +1,28 @@
+{
+  "name": "proyecto_m-m_coder",
+  "version": "1.0.0",
+  "description": "proyecto m&m de coder",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-css": "node-sass --include-path scss scss/style.scss css/style.css",
+    "watch-css": "nodemon -e scss -x \"npm run build-css\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Nicolas-Marquez/M-M.git"
+  },
+  "keywords": [
+    "mm"
+  ],  
+  "author": "Nicolas Marquez",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Nicolas-Marquez/M-M/issues"
+  },
+  "homepage": "https://github.com/Nicolas-Marquez/M-M#readme",
+  "devDependencies": {
+    "node-sass": "^7.0.3",
+    "nodemon": "^2.0.20"
+  }
+}

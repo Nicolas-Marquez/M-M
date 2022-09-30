@@ -2,77 +2,99 @@
   margin: 0;
   padding: 0;
 }
+
 /* color marca FF9666 */
 header {
- /*  background-color: yellow; */
+  /*  background-color: yellow; */
   width: 100%;
   height: 70px;
 }
+
+/*
 .ancho {
   width: 90%;
   height: 70px;
-/*   background-color: red; */
+ background-color: red; 
   margin: auto;
 }
-main {height: 100vh;}
+*/
+
+main {
+  height: 100vh;
+}
+
 .logo {
   width: 50%;
   height: 70px;
-/*   background-color: orange; */
+  /*   background-color: orange; */
   float: left;
   font-size: 40px;
 }
+
 .logo p a {
   color: #ff9666;
 }
+
 main h2 {
   text-align: center;
 }
+
 main p {
   text-align: center;
   justify-content: center;
 }
+
 .texto1 {
   margin: auto;
   width: 60%;
   height: 50%;
   font-size: 30px;
   text-align: center;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(256, 256, 256, 0.7);
 }
+
 .body {
   background-image: url(../img/VLC.jpg);
   overflow-x: hidden;
   background-repeat: no-repeat;
   background-attachment: fixed;
 }
+
 ul {
   text-decoration: none;
   width: 100%;
   list-style: none;
   line-height: 50px;
 }
+
 li {
   text-decoration: none;
 }
+
 a {
   text-decoration: none;
 }
+
 nav ul li a {
-  color: rgb(255, 255, 255);
+  color: white;
 }
+
 .barra_nav {
   width: 50%;
   height: 70px;
   background-color: olive;
   float: left;
   /* padding: 10px;
-  margin-right: 20px;
-  margin-left: 20px;
-  margin: 0.5rem; */
+    margin-right: 20px;
+    margin-left: 20px;
+    margin: 0.5rem; */
   background-color: rgba(27, 0, 133, 0.257);
   font-family: "Times New Roman", Times, serif;
   text-align: end;
 }
+
 .menu > li {
   text-decoration: none;
   position: relative;
@@ -81,13 +103,16 @@ nav ul li a {
   text-align: center;
   transition: all 0.3s;
 }
+
 .menu li:hover {
   background-color: rgba(169, 169, 255, 0.5);
 }
+
 .menu a:hover {
   color: black;
   transition: all 0.3s;
 }
+
 .submenu {
   position: absolute;
   background-color: #33333394;
@@ -96,6 +121,7 @@ nav ul li a {
   opacity: 0;
   transition: opacity 1.5s;
 }
+
 .submenu > li {
   text-decoration: none;
   display: flex;
@@ -105,15 +131,12 @@ nav ul li a {
   color: #fff;
   font-family: "Times New Roman", Times, serif;
 }
+
 .menu li:hover .submenu {
   visibility: visible;
   opacity: 1;
 }
-.botonesrs {
-  
-  
-  
-}
+
 .botonesrs a {
   text-decoration: none;
   font-size: 28px;
@@ -124,55 +147,125 @@ nav ul li a {
   background: #ff9666;
   color: #fff;
   border-radius: 50%;
-  box-shadow: 2px 2px 5px rgba(0, 0, 0, .5) ;
-  transition: all .4s ease-in-out;
-
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+  transition: all 0.4s ease-in-out;
   justify-self: flex-end;
 }
+
 .botonesrs a:hover {
   transform: scale(1.2);
 }
-.botonesrs{justify-content: center;}
 
-footer {width: 100%;
-background-color: rgb(0, 0, 0);
-display: flex;
-flex-direction: row;
-justify-content: space-between;}
-.texto_footer {color: white;
-font-size: 20px;
-margin: 15px;}
-
-.nosotros {display: flex;}
-.nosotros_imagen {height: 40%;
-  margin-bottom: 20px;
-margin-left: 15px;}
-.nosotros_texto {color: white;
-font-size: 2rem;
-width: 40%;
-background-color: rgba(93, 92, 92, 0.8);
-align-self: center;
-justify-self: center;}
-.intro {justify-content: center;
-align-content: center;}
-.intro_video {
-  width: 75%
-;
-height: 50%;
-margin-left: 15%;
-margin-bottom: 50px;
+.botonesrs {
+  justify-content: center;
 }
-.casa{ display: flex;}
-.casa_texto{
+
+footer {
+  width: 100%;
+  background-color: black;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.texto_footer {
   color: white;
-font-size: 2rem;
-width: 40%;
-background-color: rgba(93, 92, 92, 0.8);
-margin-left: 15%;
+  font-size: 20px;
+  margin: 15px;
+}
+
+.nosotros {
+  display: flex;
+}
+
+.nosotros_imagen {
+  height: 40%;
+  margin-bottom: 20px;
+  margin-left: 15px;
+}
+
+.nosotros_texto {
+  color: white;
+  font-size: 2rem;
+  width: 50%;
+  margin-right: 5%;
+  background-color: rgba(93, 92, 92, 0.8);
+  align-self: center;
+  justify-self: center;
+}
+
+.intro {
+  justify-content: center;
+  align-content: center;
+}
+
+.intro_video {
+  width: 75%;
+  height: 50%;
+  margin-left: 14%;
+  margin-bottom: 50px;
+}
+
+.casa {
+  display: flex;
+}
+
+.casa_texto {
+  color: white;
+  font-size: 2rem;
+  width: 50%;
+  background-color: rgba(93, 92, 92, 0.8);
+  margin-left: 5%;
 }
 
 .casa_img {
   height: 40%;
   width: 50%;
-  ;
 }
+
+nav.navbar {
+  background-color: #ff9666;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 1.5rem;
+}
+.navbar-nav {
+  position: absolute;
+  left: 120%;
+  transform: translatex(-50%);
+}
+.foto1 {
+  position: center;
+  padding-left: 14%;
+  padding-top: 70px;
+}
+
+.card {
+  width: 300px;
+  height: 100px;
+  margin: 10px;
+  margin-left: 20%;
+  margin-top: 50px;
+}
+
+.card-title {
+  text-align: center;
+}
+
+.text-muted {
+  text-align: center;
+}
+
+.texto_nosotros {
+  margin-top: 50px;
+  font-size: 40px;
+  background-color: #ff9666b0;
+}
+
+
+@media (min-width: 0px) and (max.width: 576) .card {
+  width: 300px;
+  height: 100px;
+  margin: 10px;
+  margin-top: 50px;
+}
+
